@@ -1,9 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-	<title>OLÁ</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dark Tech</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="icon" href="images/darktech-logo.png">
+
+	<script>
+		function menuLateral() {
+			var slider = document.getElementById("menu");
+
+			if (slider.style.left == "0px") {
+				slider.style.left = "-1000px";
+			}
+			else {
+				slider.style.left = "0px";
+			}
+		}
+	</script>
 </head>
 <body>
-	<h1>Olá</h1>
+	<div id="navbar">
+		<h1><a href="index.html"><img src="images/darktech-logo.png" alt="logo"></a></h1>
+
+		<div id="btn-menu" onclick="menuLateral()"><i class="fas fa-bars"></i></div>
+
+		<nav id="menu">
+			<a href="#servicos"><i class="fas fa-concierge-bell"></i> Serviços</a>
+			<a href="#modelos"><i class="fas fa-file-alt"></i> Modelos</a>
+			<a href="#contato"><i class="fas fa-address-book"></i> Contato</a>
+			<a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
+		</nav>
+	</div>
+
+	<header>
+		<img src="images/darktech-logofull.png">
+	</header>
+	
+	<section id="servicos" class="conteudo">
+		<h3>Trabalho prestado</h3>
+		<p>Criação de sites</p>
+		<hr>
+		<ul class="grid">
+			<li>
+				<i class="fas fa-fingerprint"></i>
+				<h4>Deixe sua pegada digital</h4>
+				<p>Já pensou em ter seu próprio site e aumentar sua presença on-line?</p>
+				<p>Com o cres&shy;cente uso de apare&shy;lhos digi&shy;tais, é mais que neces&shy;sário investir em solu&shy;ções que realcem o quão, você ou sua empresa, se dedicam à manter contato com os clien&shy;tes através da internet.</p>
+			</li>
+
+			<li>
+				<i class="material-icons">devices</i>
+				<h4>Sites responsivos e atrativos</h4>
+				<p>Que tal ter um site que se adapta a qualquer dispo&shy;sitivo? Ou que ele tenha um visual agra&shy;dável para os visi&shy;tantes?</p>
+				
+				<p>Os sites desen&shy;volvidos pela <strong>Dark Tech</strong>, apre&shy;sentam essas caracte&shy;rísticas, mostrando aos clien&shy;tes o quão você importa-se com a usabi&shy;lidade que eles terão!</p>
+			</li>
+		</ul>
+	</section>
+
+	<section class="conteudo" id="modelos">
+		<h3>Inspire-se</h3>
+		<p>Veja modelos de sites e escolha o que melhor se adequada as suas necessidades</p>
+		<hr>
+		<ul class="grid">
+			<li>
+				<div class="card">
+					<a href="model1.html" target="_blank">
+						<img src="images/model1.jpg">
+						<p><i class="fas fa-external-link-alt"></i> Legenda</p>
+					</a>
+				</div>
+			</li>
+
+			<li>
+				<div class="card">
+					<a href="model1.html" target="_blank">
+						<img src="images/model1.jpg">
+						<p><i class="fas fa-external-link-alt"></i> Legenda</p>
+					</a>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<section class="conteudo" id="contato">
+		<h3>Atendimento</h3>
+		<p>Caso se interesse em nosso serviço, entre em contato</p>
+		<hr>
+		<ul class="grid">
+			<li><i class="fas fa-comments"></i></li>
+			<li>
+				<div>
+				<p><i class="fab fa-telegram"></i> Telegram: <a href="https://t.me/@user" target="_blank"></i>@User</a><p>
+				<p><i class="fas fa-envelope-open-text"></i> E-mail: <a href="mailto:user@mail.com"></i>user@mail.com</a><p>
+				<p><i class="fas fa-phone"></i> Telefone: <a href="tel:99999-9999"></i><wbr>(99)99999-9999</a><p>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<section class="conteudo" id="sobre">
+		<h3>Sobre o desenvolvedor</h3>
+		<hr>
+		<ul class="grid">
+			<li><img src="images/lc.jpg"></li>
+			<li>
+				<p>Olá, meu nome é Dark, atual&shy;mente estu&shy;dante do Ensino Médio, amante de infor&shy;mática, ciên&shy;cias da natu&shy;reza e exatas, tenho quase certe&shy;za que você leu isso e pensou que tenho proble&shy;mas, um pouco tal&shy;vez. 😂</p>
+				<p>Criei a Dark Tech porque sempre tive o sonho de ter meu pró&shy;prio negó&shy;cio e ao mesmo tempo fazer o que amo. Creio que essa seja a fonte de uma vida mais feliz!</p>
+			</li>
+		</ul>
+	</section>
+
+	<div id="topo"><a href="#top"><i class="fas fa-arrow-alt-circle-up fa-3x"></i></a></div>
+
+	<footer>
+		<h3>Dark Tech</h3>
+		<p>Todos os direitos reservados</p>
+	</footer>
 </body>
 </html>
