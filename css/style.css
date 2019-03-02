@@ -3,8 +3,7 @@
 /* RESET */
 * {margin: 0; padding: 0; box-sizing: border-box; font-size: 100%;}
 html, body {height: 100%;  font-family: 'Share Tech Mono', monospace;}
-a {text-decoration: none; cursor: pointer; opacity: 0.9;}
-a:hover {opacity: 1;}
+a {text-decoration: none; cursor: pointer;}
 hr {width: 200px; height: 2px; border: none; margin: 30px 0 50px 0; background-color: rgb(20, 20, 30);}
 li {list-style: none;}
 
@@ -21,10 +20,12 @@ li {list-style: none;}
 	align-items: center;
 	background-color: rgba(20, 20, 30, 0.9);
 }
+#navbar a {opacity: 0.9;}
+#navbar a:hover {opacity: 1;}
 #navbar h1 img {width: 60px;}
 #navbar nav {display: flex; flex-wrap: wrap;}
 #navbar nav a {color: #0f83b5; padding: 15px 20px; text-transform: uppercase; font-weight: bold; border-radius: 5px; transition: all 0.5s; font-size: 1.1rem;}
-#navbar nav a:hover {background-color: #0f83b5; color: rgb(20, 20, 30)}
+#navbar nav a:hover {background-color: #0f83b5; color: rgb(20, 20, 30);}
 @media (max-width: 600px) {
 	#navbar {position: fixed; padding: 10px 15px; justify-content: space-between;}
 	#navbar nav {
@@ -115,6 +116,7 @@ header img {width: 100%; max-width: 700px;}
 
 /* MODELOS */
 #modelos {background-color: rgb(20, 20, 30); color: #eee;}
+#modelos .card:first-child {margin-bottom: 30px;}
 #modelos hr {background-color: #eee;}
 #modelos a {color: rgb(20, 20, 30);}
 #modelos i {font-size: 1.2rem;}
@@ -161,5 +163,5 @@ footer {
 	padding: 60px 10px;
 	background-color: #0f83b5;
 }
-footer h3 {font-size: 1.3rem; margin-bottom: 10px;}
+footer h3 {font-size: 1.5rem;}
 footer p {font-size: 1.2rem;}
