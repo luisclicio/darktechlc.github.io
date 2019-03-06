@@ -36,7 +36,7 @@ li {list-style: none;}
 		top: 84px;
 		left: -1000px;
 		background-color: rgba(20, 20, 30, 0.9);
-		transition: left 0.4s;
+		transition: left 0.5s;
 		padding-top: 20px;
 	}
 	#navbar nav a {border-radius: 0; padding: 20px; text-align: center;}
@@ -51,7 +51,7 @@ li {list-style: none;}
 	border-radius: 4px;*/
 	color: #0f83b5;
 	cursor: pointer;
-	transition: all 0.4s;
+	transition: all 0.5s;
 	font-size: 1.5rem;
 }
 /*#btn-menu:hover {background-color: #0f83b5; color: rgb(20, 20, 30);}*/
@@ -60,7 +60,7 @@ li {list-style: none;}
 /* HEADER */
 header {
 	height: 100%;
-	background: url(../images/fundo-dt.jpg) center fixed;
+	background: url(../images/fundo-dt.png) center fixed;
 	/*background-size: cover;*/
 	color: #eee;
 	display: flex;
