@@ -31,13 +31,15 @@ li {list-style: none;}
 	#navbar nav {
 		flex-direction: column;
 		width: 100%;
+		height: 100%;
 		position:fixed;
 		top: 84px;
 		left: -1000px;
 		background-color: rgba(20, 20, 30, 0.9);
 		transition: left 0.4s;
+		padding-top: 20px;
 	}
-	#navbar nav a {border-radius: 0; padding: 20px;}
+	#navbar nav a {border-radius: 0; padding: 20px; text-align: center;}
 }
 @media (max-height: 300px) {#navbar nav a {padding: 15px 20px;}}
 @media (max-height: 620px) {#navbar h1 img {width: 40px;} #navbar nav {top: 64px;}}
@@ -45,19 +47,20 @@ li {list-style: none;}
 #btn-menu {
 	padding: 7px 10px;
 	background-color: transparent;
-	border: 2px solid #0f83b5;
-	border-radius: 4px;
+	/*border: 2px solid #0f83b5;
+	border-radius: 4px;*/
 	color: #0f83b5;
 	cursor: pointer;
 	transition: all 0.4s;
+	font-size: 1.5rem;
 }
-#btn-menu:hover {background-color: #0f83b5; color: rgb(20, 20, 30);}
+/*#btn-menu:hover {background-color: #0f83b5; color: rgb(20, 20, 30);}*/
 @media (min-width: 601px) {#btn-menu {display: none;}}
 
 /* HEADER */
 header {
 	height: 100%;
-	background: url(../images/fundo-dt.jpg) center ;
+	background: url(../images/fundo-dt.jpg) center fixed;
 	/*background-size: cover;*/
 	color: #eee;
 	display: flex;
@@ -129,7 +132,7 @@ header img {width: 100%; max-width: 700px;}
 #contato li div p {text-align: left; margin-bottom: 15px;}
 #contato a {color: #0f83b5;}
 #contato a:hover {text-decoration: underline;}
-@media (max-width: 320px) {#contato li div p {text-align: center;}}
+@media (max-width: 430px) {#contato li div p {text-align: center;}}
 
 /* SOBRE */
 #sobre {background-color: rgb(20, 20, 30); color: #eee;}
