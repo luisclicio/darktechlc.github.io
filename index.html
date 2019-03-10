@@ -20,6 +20,11 @@
 				slider.style.left = "0px";
 			}
 		}
+
+		var btn = document.getElementById("btn-menu");
+		btn.onclick = function() {
+			window.navigator.vibrate(250);
+		}
 	</script>
 </head>
 <body>
@@ -124,9 +129,5 @@
 	<footer>
 		<h3>Dark Tech</h3>
 	</footer>
-
-	<script>
-		window.navigator.vibrate(250);
-	</script>
 </body>
 </html>
