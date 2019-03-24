@@ -143,12 +143,13 @@ header img {width: 100%; max-width: 700px;}
 
 /* BOTÃO TOPO */
 #topo {
-	border-radius: 50%;
-	border: 2px solid rgb(20, 20, 30);
+	border-radius: 5px 0 0 5px;
+	border: none;
 	background-color: rgb(20, 20, 30);
 	position: fixed;
-	right: 10px;
+	right: 0;
 	bottom: 10px;
+	padding: 6px 10px;
 }
 #topo a {color: #0f83b5;}
 @media (max-width: 600px) {
