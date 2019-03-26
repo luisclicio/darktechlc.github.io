@@ -154,8 +154,8 @@ header img {width: 100%; max-width: 700px;}
 }
 #topo a {color: #0f83b5;}
 @media (max-width: 600px) {
-	#topo {bottom: 5px; padding: 5px 8px;}
-	#topo i {font-size: 2.2rem;}
+	#topo {bottom: 5px; padding: 5px 8px; border: 2px;}
+	#topo i {font-size: 1.8rem;}
 }
 
 /* FOOTER */
