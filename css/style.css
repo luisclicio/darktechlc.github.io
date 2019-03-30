@@ -156,7 +156,7 @@ header img {width: 100%; max-width: 700px;}
 #topo a {color: #0f83b5;}
 @media (max-width: 600px) {
 	#topo {bottom: 5px; padding: 5px 8px;}
-	#topo i {font-size: 1.8rem;}
+	#topo i {font-size: 1.4rem;}
 }
 
 /* FOOTER */
