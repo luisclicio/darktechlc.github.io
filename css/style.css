@@ -140,6 +140,7 @@ header img {width: 100%; max-width: 700px;}
 #sobre li {justify-content: center; align-items: center;}
 #sobre li p {text-indent: 20px;}
 #sobre li img {width: 200px; border-radius: 50%; border: 4px solid #eee;}
+#sobre blockquote {font-size: 1.2rem; padding: 10px 15px 0;}
 
 /* BOTÃO TOPO */
 #topo {
@@ -154,7 +155,7 @@ header img {width: 100%; max-width: 700px;}
 }
 #topo a {color: #0f83b5;}
 @media (max-width: 600px) {
-	#topo {bottom: 5px; padding: 5px 8px; border: 2px;}
+	#topo {bottom: 5px; padding: 5px 8px;}
 	#topo i {font-size: 1.8rem;}
 }
 
