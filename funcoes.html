@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkMode</title>
+    <style>
+        html {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        div {
+            background-color: cornflowerblue;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            color: rgb(20, 20, 20);
+			text-align: center;
+        }
+        h1 {
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+<body onload="dateToday()">
+
+    <h1>Funções</h1>
+    <div onclick="darkMode()">Modo noturno</div>
+    <br>
+    <div onclick="ola()">Alerta</div>
+    <br>
+    <div onclick="printPage()">Imprimir</div>
+    <br>
+    <div onclick="pesquisar()">Pesquise</div>
+	<br>
+	<div>
+		<p>Relógio:</p>
+		<h3 id="date-today"></h3>
+	</div>
+
+    <script>
+		// Modo noturno
+        function darkMode() {
+            //var document.body = document.querySelector('article#document.body');
+            if (document.body.style.background == 'rgb(255, 255, 255)') {
+                document.body.style.background = 'rgb(20, 20, 20)';
+                document.body.style.color = 'rgb(255, 255, 255)';
+            }
+            else {
+                document.body.style.background = 'rgb(255, 255, 255)';
+                document.body.style.color = 'rgb(20, 20, 20)';
+            }
+        }
+
+		// Alerta
+        function ola() {
+            alert("Visite:\n https://darktechlc.github.io");
+        }
+		
+		// Imprimir página
+		function printPage() {
+			window.print();
+		}
+
+		// Pesquisar
+		function pesquisar() {
+			var word = prompt("Digite algo:");
+			if (word == null || word == "") {
+				exit();
+			}
+			else {
+				window.open('https://duckduckgo.com/' + word);
+			}
+		}
+
+		// Relógio
+		function dateToday() {
+			var today = new Date();
+			var hours = today.getHours();
+			var minutes = today.getMinutes();
+			var seconds = today.getSeconds();
+			var day = today.getDay();
+			var month = today.getMonth();
+			minutes = checkTime(minutes);
+			seconds = checkTime(seconds);
+			day = checkTime(day);
+			month = checkTime(month);
+			document.getElementById('date-today').innerHTML = day + "/" + month + " - " + hours + ":" + minutes + ":" + seconds;
+			setTimeout(dateToday, 1000);
+		}
+		function checkTime(i) {
+			if (i < 10) {i = "0" + i}
+			return i;
+		}
+			
+    </script>
+</body>
+</html>
