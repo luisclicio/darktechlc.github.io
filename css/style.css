@@ -134,6 +134,15 @@ header {
   }
 }
 
+@media (max-width: 430px) {
+  .text-header h2 {
+    font-size: 4em;
+  }
+  .text-header p {
+    font-size: 2.5em;
+  }
+}
+
 /* MAIN */
 main {
   background: rgb(212, 212, 212);
@@ -215,20 +224,24 @@ main section hr {
   }
   .content article {
     height: auto;
-    min-height: 450px;
+    margin: 10px 0;
+    min-height: 400px;
     width: 100%;
   }
 }
 
 @media (max-width: 750px) {
+  main section {
+    padding: 10px;
+  }
   .content {
-    padding: 20px;
+    padding: 5px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   .content article {
-    padding: 20px;
+    padding: 15px;
   }
 }
 
@@ -255,6 +268,20 @@ main section hr {
   color: rgb(28, 28, 33);
 }
 
+@media (max-width: 450px) {
+  #contato article {
+    width: 90vw;
+  }
+
+  #contato article p span {
+    margin-bottom: 30px;
+  }
+
+  #contato article p span a {
+    display: block;
+  }
+}
+
 /* Sobre */
 #sobre article {
   color: rgb(212, 212, 212);
@@ -275,6 +302,12 @@ main section hr {
   margin-top: 10px;
   font-size: 0.9em;
   text-indent: 30px;
+}
+
+@media (max-width: 360px) {
+  #sobre article img {
+    height: 250px;
+  }
 }
 
 /* FOOTER */
