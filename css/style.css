@@ -7,7 +7,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   font-family: "Share Tech Mono", monospace;
   scroll-behavior: smooth;
 }
@@ -39,9 +40,10 @@ header {
   align-items: center;
   border-bottom: 1px solid rgba(212, 212, 212, 0.6);
   display: flex;
+  flex-wrap: wrap;
   height: 80px;
   justify-content: space-around;
-  padding: 10px 0px;
+  /* padding: 10px 0px; */
   transition: background 500ms;
   width: 100%;
 }
@@ -49,14 +51,27 @@ header {
 .scroll {
   background: rgba(28, 28, 33, 0.95);
   border-bottom: none !important;
-  height: 70px;
+  height: 60px;
   position: fixed;
   top: 0;
   z-index: 5;
 }
 
+.scroll #logo img {
+  margin-top: 7px;
+  height: 45px !important;
+}
+
 .topbar #logo img {
   height: 55px;
+}
+
+.topbar #btn-menu {
+  display: none;
+}
+
+.topbar #btn-menu i {
+  color: rgb(212, 212, 212);
 }
 
 .topbar nav a {
@@ -70,8 +85,8 @@ header {
 }
 
 .topbar nav a:hover {
-  color: rgba(27, 156, 252,1.0);
-  text-shadow: 0 0 2px rgba(27, 156, 252,1.0);
+  color: rgba(27, 156, 252, 1);
+  text-shadow: 0 0 2px rgba(27, 156, 252, 1);
 }
 
 .text-header {
@@ -83,15 +98,16 @@ header {
   text-align: center;
 }
 
-.text-header h2, .text-header p {
+.text-header h2,
+.text-header p {
   position: relative;
   top: -50px;
 }
 
 .text-header h2 {
-  color: rgba(27, 156, 252,1.0);
+  color: rgba(27, 156, 252, 1);
   font-size: 5em;
-  text-shadow: 0 0 4px rgba(27, 156, 252,1.0);
+  text-shadow: 0 0 4px rgba(27, 156, 252, 1);
 }
 
 .text-header h2 span {
@@ -102,6 +118,20 @@ header {
   color: rgb(212, 212, 212);
   font-size: 3em;
   letter-spacing: -3px;
+}
+
+@media (max-width: 750px) {
+  .topbar {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .topbar #btn-menu {
+    display: block;
+  }
+  .topbar nav {
+    display: none;
+  }
 }
 
 /* MAIN */
@@ -127,14 +157,15 @@ main section p {
 }
 
 main section hr {
-  background: rgba(27, 156, 252,1.0);
+  background: rgba(27, 156, 252, 1);
   border: none;
   height: 10px;
   margin: 30px 0 30px 0;
   width: 100px;
 }
 
-#servicos, #contato {
+#servicos,
+#contato {
   background: rgb(28, 28, 33);
   color: rgb(212, 212, 212);
 }
@@ -148,7 +179,7 @@ main section hr {
 
 .content article {
   align-items: center;
-  background: rgba(27, 156, 252,1.0);
+  background: rgba(27, 156, 252, 1);
   border-radius: 5px;
   color: rgb(28, 28, 33);
   display: flex;
@@ -178,6 +209,29 @@ main section hr {
   text-indent: 15px;
 }
 
+@media (max-width: 980px) {
+  .content {
+    padding: 0 100px;
+  }
+  .content article {
+    height: auto;
+    min-height: 450px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .content article {
+    padding: 20px;
+  }
+}
+
 /* Contato */
 #contato article {
   justify-content: space-around;
@@ -203,17 +257,42 @@ main section hr {
 
 /* Sobre */
 #sobre article {
+  color: rgb(212, 212, 212);
   justify-content: center;
 }
 
+#sobre article:first-child {
+  background: none;
+}
+
 #sobre article img {
-  border: 5px solid rgb(212, 212, 212);
+  border: 5px solid rgba(27, 156, 252, 1);
   border-radius: 50%;
-  height: 200px;
+  height: 300px;
 }
 
 #sobre article p em {
   margin-top: 10px;
   font-size: 0.9em;
   text-indent: 30px;
+}
+
+/* FOOTER */
+footer {
+  align-items: center;
+  background: rgb(28, 28, 33);
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+}
+
+footer img {
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+footer #social-icons i {
+  color: rgb(212, 212, 212);
+  font-size: 40px;
 }
