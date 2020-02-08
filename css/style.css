@@ -221,6 +221,10 @@ footer div a {
 }
 
 @media all and (max-width: 800px) {
+  header::before {
+    height: 90%;
+  }
+
   header h1,
   header .nav-bar,
   main {
@@ -255,6 +259,6 @@ footer div a {
   }
 
   .section-content article img {
-    height: auto;
+    height: 170px;
   }
 }
