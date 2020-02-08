@@ -29,7 +29,7 @@ header h1,
 header .nav-bar,
 main,
 footer {
-  padding: 0 180px;
+  padding: 0 150px;
   width: 100%;
 }
 
@@ -47,7 +47,7 @@ header::before {
   top: 0;
   right: 0;
   width: 100%;
-  height: 100%;
+  height: 80%;
   background: var(--color-blue);
   clip-path: polygon(80% 0, 100% 0, 100% 100%, 50% 100%);
 }
@@ -59,7 +59,7 @@ header .nav-bar {
   display: flex;
   height: 50px;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 2;
 }
@@ -69,7 +69,7 @@ header .nav-bar {
 }
 
 .nav-bar .logo img {
-  height: 40px;
+  height: 35px;
   margin-top: 3px;
 }
 
@@ -110,11 +110,112 @@ header div:nth-child(2) {
   max-width: 700px;
 }
 
+/* MAIN */
+section {
+  border-bottom: 1px solid var(--color-main-nd);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 65px 0;
+}
+
+section h2,
+h3,
+hr {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 2.5em;
+}
+
+section h2 {
+  font-size: 2.1em;
+}
+
+section hr {
+  background: var(--color-blue);
+  border: none;
+  height: 10px;
+  align-self: center;
+  width: 150px;
+}
+
+section .section-content {
+  column-gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 30px;
+  row-gap: 20px;
+}
+
+.section-content article {
+  box-shadow: 0 0 5px var(--color-main-nd);
+  padding: 20px 10px;
+}
+
+.section-content article i,
+h4,
+p {
+  margin-bottom: 10px;
+}
+
+.section-content article i {
+  font-size: 3em;
+}
+
+.section-content article h4 {
+  font-size: 1.4em;
+}
+
+.section-content article p {
+  font-size: 1.2em;
+}
+
+article .card-link {
+  text-decoration: none;
+}
+
+article .card-link img {
+  background: var(--color-main-nd);
+  height: 350px;
+  width: 100%;
+}
+
+article .card-link h5 {
+  color: var(--color-main-nd);
+  font-size: 1.1em;
+  margin-top: -5px;
+  padding: 15px 0 0 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/* FOOTER */
+footer {
+  background-color: #08090a;
+  color: #dee4e8;
+  text-align: center;
+  padding: 100px 0;
+}
+
+footer p {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+footer div a {
+  color: #dee4e8;
+  font-size: 2.2em;
+  padding: 10px;
+}
+
+/* RESPONSIVE LAYOUT */
+
 @media all and (max-width: 1100px) {
   header h1,
   header .nav-bar,
-  main,
-  footer {
+  main {
     padding: 0 80px;
   }
 }
@@ -122,8 +223,7 @@ header div:nth-child(2) {
 @media all and (max-width: 800px) {
   header h1,
   header .nav-bar,
-  main,
-  footer {
+  main {
     padding: 0 20px;
   }
 
@@ -147,5 +247,14 @@ header div:nth-child(2) {
 
   .nav-bar nav a span {
     display: none;
+  }
+
+  section .section-content {
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+  }
+
+  .section-content article img {
+    height: auto;
   }
 }
