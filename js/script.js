@@ -2,30 +2,37 @@ const body = document.body;
 const btnChangeTheme = document.querySelector('#btn-change-theme');
 
 const hour = new Date().getHours();
+const colorOne = '#08090a';
+const colorTwo = '#dee4e8';
 
 let theme;
 
 function changeTheme() {
+  function setColorProperty(element, colorMain, colorMainNd) {
+    element.style.setProperty('--color-main', colorMain);
+    element.style.setProperty('--color-main-nd', colorMainNd);
+  }
+
   if (theme === 'light') {
-    body.style.setProperty('--color-main', '#08090a');
-    body.style.setProperty('--color-main-nd', '#dee4e8');
+    setColorProperty(body, colorOne, colorTwo);
     theme = 'dark';
   } else {
-    body.style.setProperty('--color-main', '#dee4e8');
-    body.style.setProperty('--color-main-nd', '#08090a');
+    setColorProperty(body, colorTwo, colorOne);
     theme = 'light';
   }
-}
+};
 
-function setThemeByHour() {
+(function setThemeByHour() {
   if (hour >= 6 && hour < 18) {
     theme = 'dark';
   } else {
     theme = 'light';
   }
-  changeTheme()
-}
-
-setThemeByHour();
+  changeTheme();
+})();
 
 btnChangeTheme.addEventListener('click', changeTheme);
+
+body.addEventListener('keypress', (e) => {
+  if (e.key === 'm' || e.key === 'M') changeTheme();
+});
