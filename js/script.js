@@ -1,5 +1,6 @@
 const body = document.body;
 const btnChangeTheme = document.querySelector('#btn-change-theme');
+const btnTop = document.querySelector('#btn-top');
 
 const hour = new Date().getHours();
 const colorOne = '#08090a';
@@ -36,3 +37,11 @@ btnChangeTheme.addEventListener('click', changeTheme);
 body.addEventListener('keypress', (e) => {
   if (e.key === 'm' || e.key === 'M') changeTheme();
 });
+
+window.onscroll = function () {
+  if (document.body.scrollTop > 140 || document.documentElement.scrollTop > 140) {
+    btnTop.style.display = 'block';
+  } else {
+    btnTop.style.display = 'none';
+  }
+}
