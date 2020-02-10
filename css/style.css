@@ -163,8 +163,8 @@ section .section-content {
 }
 
 .section-content article {
-  box-shadow: 0 0 5px var(--color-main-nd);
-  padding: 20px 10px;
+  /* box-shadow: inset 0 0 5px var(--color-main-nd); */
+  padding: 20px 0;
 }
 
 .section-content article i,
@@ -198,7 +198,7 @@ article .card-link img {
 article .card-link h5 {
   color: var(--color-main);
   background: var(--color-main-nd);
-  border-radius: 0 0 4px 4px;
+  /* border-radius: 0 0 4px 4px; */
   font-size: 1.1em;
   margin-top: -5px;
   padding: 15px 0;
@@ -228,6 +228,7 @@ article .card-link h5 {
 }
 
 #contato .section-content article a {
+  border-bottom: 2px solid var(--color-main-nd);
   color: var(--color-main-nd);
   font-size: 1.2em;
   margin-left: 5px;

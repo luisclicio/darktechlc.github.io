@@ -1,0 +1,18 @@
+{
+  "name": "darktechlc",
+  "version": "3.0.0",
+  "description": "My personal site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarkTechLC/darktechlc.github.io.git"
+  },
+  "author": "Clício",
+  "bugs": {
+    "url": "https://github.com/DarkTechLC/darktechlc.github.io/issues"
+  },
+  "homepage": "https://github.com/DarkTechLC/darktechlc.github.io#readme"
+}
