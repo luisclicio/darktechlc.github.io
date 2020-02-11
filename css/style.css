@@ -37,7 +37,7 @@ body {
   width: 100%;
 }
 
-header h1,
+header .content-header,
 header .nav-bar,
 main {
   padding: 0 150px;
@@ -46,10 +46,11 @@ main {
 
 /* HEADER */
 header {
-  border-bottom: 1px solid var(--color-main-nd);
+  background: url(../img/bg-header.jpg) -550px -200px no-repeat;
+  /* border-bottom: 1px solid var(--color-main-nd); */
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -60,8 +61,18 @@ header::before {
   right: 0;
   width: 100%;
   height: 100%;
+  background: rgba(8, 9, 10, 0.9);
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
   background: var(--color-blue);
-  clip-path: polygon(80% 0, 100% 0, 100% 100%, 50% 100%);
+  clip-path: polygon(80% 0, 100% 0, 100% 100%, 60% 100%);
 }
 
 header .nav-bar {
@@ -117,10 +128,32 @@ header .nav-bar {
   margin-left: 5px;
 }
 
-header div:nth-child(2) {
-  max-width: 700px;
+header .content-header {
   position: absolute;
+  z-index: 1;
+}
+
+header div:nth-child(2) {
+  color: #dee4e8;
+  max-width: 800px;
   top: 100px;
+}
+
+header div:nth-child(3) {
+  color: #dee4e8;
+  max-width: 800px;
+  bottom: 100px;
+}
+
+.btn {
+  background: var(--color-blue);
+  border-radius: 4px;
+  box-shadow: 0 0 5px #08090a;
+  color: #dee4e8;
+  font-weight: bold;
+  padding: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* MAIN */
@@ -287,7 +320,7 @@ footer div a {
 /* RESPONSIVE LAYOUT */
 
 @media all and (max-width: 1100px) {
-  header h1,
+  header .content-header,
   header .nav-bar,
   main {
     padding: 0 80px;
@@ -295,7 +328,11 @@ footer div a {
 }
 
 @media all and (max-width: 800px) {
-  header h1,
+  header {
+    height: calc(100vh - 40px);
+  }
+
+  header .content-header,
   header .nav-bar,
   main {
     padding: 0 20px;
@@ -310,6 +347,14 @@ footer div a {
     left: 0;
     position: fixed;
     width: 100%;
+  }
+
+  header div:nth-child(3) {
+    bottom: 140px;
+  }
+
+  .btn {
+    padding: 20px 10px;
   }
 
   .nav-bar nav a {
@@ -346,5 +391,15 @@ footer div a {
 
   #btn-top {
     bottom: 50px;
+  }
+}
+
+@media all and (max-height: 440px) {
+  header div:nth-child(2) {
+    top: 60px;
+  }
+
+  header div:nth-child(3) {
+    bottom: 70px;
   }
 }
