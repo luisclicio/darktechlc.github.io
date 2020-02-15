@@ -46,7 +46,7 @@ main {
 
 /* HEADER */
 header {
-  background: url(../img/bg-header.jpg) -550px -200px no-repeat;
+  background: url(../img/bg-header.jpg) -550px -200px no-repeat fixed;
   /* border-bottom: 1px solid var(--color-main-nd); */
   display: flex;
   flex-direction: column;
@@ -227,6 +227,22 @@ p {
   font-size: 1.2em;
 }
 
+#sobre .section-content article:nth-child(1) {
+  align-items: center;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+}
+
+#my-photo {
+  border-radius: 50%;
+  box-shadow: 0 0 5px var(--color-main-nd);
+  height: 100%;
+  min-height: 250px;
+  max-width: 250px;
+  width: 100%;
+}
+
 article .card-link {
   text-decoration: none;
 }
@@ -275,22 +291,6 @@ article .card-link h5 {
   font-size: 1.2em;
   margin-left: 5px;
   text-decoration: none;
-}
-
-#sobre .section-content article:nth-child(1) {
-  align-items: center;
-  box-shadow: none;
-  display: flex;
-  justify-content: center;
-}
-
-#my-photo {
-  border-radius: 50%;
-  box-shadow: 0 0 5px var(--color-main-nd);
-  height: 100%;
-  min-height: 250px;
-  max-width: 250px;
-  width: 100%;
 }
 
 /* FOOTER */
