@@ -133,13 +133,22 @@ header .content-header {
   z-index: 1;
 }
 
-header div:nth-child(2) {
+.text-header {
   color: #dee4e8;
-  max-width: 800px;
-  top: 100px;
+  max-width: 890px;
+  top: 120px;
 }
 
-header div:nth-child(3) {
+.text-header h1 {
+  font-size: 2.8em;
+}
+
+.text-header p {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.btn-header {
   color: #dee4e8;
   max-width: 800px;
   bottom: 100px;
@@ -349,8 +358,23 @@ footer div a {
     width: 100%;
   }
 
-  header div:nth-child(3) {
-    bottom: 140px;
+  .text-header {
+    color: #dee4e8;
+    max-width: 100%;
+    top: 100px;
+  }
+
+  .text-header h1 {
+    font-size: 2em;
+  }
+
+  .text-header p {
+    font-size: 1.1em;
+    margin-top: 15px;
+  }
+
+  .btn-header {
+    bottom: 100px;
   }
 
   .btn {
@@ -395,11 +419,11 @@ footer div a {
 }
 
 @media all and (max-height: 440px) {
-  header div:nth-child(2) {
+  .text-header {
     top: 60px;
   }
 
-  header div:nth-child(3) {
+  .btn-header {
     bottom: 70px;
   }
 }
