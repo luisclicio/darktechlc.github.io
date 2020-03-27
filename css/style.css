@@ -227,7 +227,7 @@ p {
   font-size: 1.2em;
 }
 
-#sobre .section-content article:nth-child(1) {
+#sobre .section-content article {
   align-items: center;
   box-shadow: none;
   display: flex;
@@ -249,7 +249,8 @@ article .card-link {
 
 article .card-link img {
   border: 1px solid var(--color-main-nd);
-  height: 350px;
+  /* height: 350px; */
+  object-fit: cover;
   width: 100%;
 }
 
@@ -425,5 +426,14 @@ footer div a {
 
   .btn-header {
     bottom: 70px;
+  }
+}
+
+@media all and (max-width: 360px) {
+  #contato .section-content article span i {
+    font-size: 1.1em;
+  }
+  #contato .section-content article span a {
+    font-size: 1em;
   }
 }
