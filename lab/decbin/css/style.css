@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+:root {
+  --color-main: #dee4e8;
+  --color-main-nd: #08090a;
+  --color-blue: #4f7fa2;
+  --color-green: #46b09c;
+  --color-red: #ba0c3d;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-main-nd);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-main);
+}
+
+header,
+main {
+  padding: 0 200px;
+}
+
+header {
+  background: var(--color-main-nd);
+  color: var(--color-main);
+  height: 70px;
+  width: 100%;
+}
+
+.convert-area,
+.form-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.convert-area {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 70px);
+}
+
+.form-area {
+  max-width: 700px;
+  width: 100%;
+}
+
+.info-convert {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.input-value {
+  border: none;
+  color: var(--color-main-nd);
+  font-size: 1.5em;
+  padding: 20px;
+  transition: all linear 300ms;
+  width: 100%;
+}
+
+.input-value::placeholder {
+  color: var(--color-main-nd);
+}
+
+.input-value:first-child {
+  border-radius: 15px 15px 0 0;
+}
+
+.input-value:focus {
+  background: var(--color-main-nd);
+  color: var(--color-main);
+}
+
+.input-value:focus::placeholder {
+  color: var(--color-main);
+}
+
+.btn {
+  background: var(--color-green);
+  border: 0;
+  color: var(--color-main);
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 20px 10px;
+  text-transform: uppercase;
+}
+
+.btn:active {
+  filter: brightness(0.8);
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons .btn {
+  flex-grow: 1;
+}
+
+.btn-reset {
+  background: var(--color-red);
+  border-radius: 0 0 0 15px;
+}
+
+.btn-convert {
+  border-radius: 0 0 15px 0;
+}
+
+@media (max-width: 800px) {
+  header,
+  main {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  header,
+  main {
+    padding: 0 15px;
+  }
+
+  .info-convert {
+    font-size: 1.2em;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .btn-reset {
+    border-radius: 0;
+  }
+
+  .btn-convert {
+    border-radius: 0 0 15px 15px;
+  }
+}
