@@ -52,19 +52,16 @@ nav {
   z-index: 2;
 }
 
-.back,
-.logo {
-  font-size: 1.5em;
-}
-
-.back {
-  color: var(--color-main);
-  padding: 15px 15px 15px 0;
+.lab {
+  /* color: var(--color-main);*/
+  padding: 10px 0;
+  height: 50px;
 }
 
 .logo {
   background: var(--color-main);
   color: var(--color-main-nd);
+  font-size: 1.5em;
   padding: 15px;
 }
 
@@ -157,26 +154,75 @@ nav {
 .explain-area {
   background: var(--color-main-nd);
   color: var(--color-main);
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .content-explain {
-  padding-top: 50px;
-  height: 100vh;
+  padding: 25px 0;
+}
+
+.title-explain {
+  font-size: 1.4em;
+  margin: 0 0 20px 0;
+}
+
+.text-explain p {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+}
+
+.img-explain {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+}
+
+footer {
+  background: var(--color-main);
+  color: var(--color-main-nd);
+  text-align: center;
+  padding: 50px 0;
+}
+
+footer p {
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+footer p img {
+  padding-bottom: 20px;
+  width: 100px;
+}
+
+footer p a {
+  color: var(--color-blue);
+  font-weight: bold;
+  text-decoration: none;
 }
 
 @media (max-width: 800px) {
   nav,
-  .convert-area,
-  .explain-area {
+  .convert-area {
     padding: 0 50px;
+  }
+
+  .explain-area {
+    padding: 25px 50px;
   }
 }
 
 @media (max-width: 500px) {
   nav,
-  .convert-area,
-  .explain-area {
+  .convert-area {
     padding: 0 15px;
+  }
+
+  .explain-area {
+    padding: 25px 15px;
   }
 
   .title {

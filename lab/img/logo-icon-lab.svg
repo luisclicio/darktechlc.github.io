@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200"
+   height="100"
+   viewBox="0 0 52.916666 26.458334"
+   version="1.1"
+   id="svg8"
+   inkscape:export-filename="/home/clicio/Projetos/Sites/darktechlc.github.io/img/logo-icon-lab.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="logo-icon.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="118.6278"
+     inkscape:cy="34.014519"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:snap-global="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="740"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1"
+     showguides="true">
+    <inkscape:grid
+       type="axonomgrid"
+       id="grid819"
+       units="px"
+       empspacing="5"
+       originx="0"
+       gridanglex="30"
+       spacingy="1.3229167"
+       enabled="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-270.54165)">
+    <g
+       id="g833"
+       transform="translate(-0.40281311)">
+      <g
+         transform="matrix(0.89591047,0.51725415,-0.51725415,0.89591047,146.72019,23.60305)"
+         style="stroke:#4f7fa2;stroke-width:2.64583325;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         id="g830">
+        <path
+           style="fill:none;stroke:#4f7fa2;stroke-width:2.64583325;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+           d="m 0,277.15623 11.456794,-6.61458 11.456795,6.61458 v 13.22917 l -11.456795,6.61458 10e-7,-13.22916 h -10e-7 z"
+           id="path823"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccccccc" />
+        <path
+           style="fill:none;stroke:#4f7fa2;stroke-width:2.64583325;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+           d="m 22.913589,277.15623 -11.456795,6.61459 v 13.22916"
+           id="path825"
+           inkscape:connector-curvature="0" />
+      </g>
+      <path
+         inkscape:connector-curvature="0"
+         id="path1595"
+         d="M 6.4782833,273.71057 20.7702,281.96202 h -9.527947 z"
+         style="fill:#4f7fa2;fill-opacity:1;stroke:none;stroke-width:0.18420237px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <flowRoot
+         transform="matrix(0.26458333,0,0,0.26458333,-0.75595238,266.67225)"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Odibee Sans';-inkscape-font-specification:'Odibee Sans Bold';letter-spacing:0px;word-spacing:0px;fill:#4f7fa2;fill-opacity:1;stroke:none"
+         id="flowRoot817"
+         xml:space="preserve"><flowRegion
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Odibee Sans';-inkscape-font-specification:'Odibee Sans Bold';fill:#4f7fa2;fill-opacity:1"
+           id="flowRegion819"><rect
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Odibee Sans';-inkscape-font-specification:'Odibee Sans Bold';fill:#4f7fa2;fill-opacity:1"
+             y="14.285714"
+             x="100"
+             height="130.71428"
+             width="177.50002"
+             id="rect821" /></flowRegion><flowPara
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:96px;font-family:'Odibee Sans';-inkscape-font-specification:'Odibee Sans Bold';fill:#4f7fa2;fill-opacity:1"
+           id="flowPara823">Lab</flowPara></flowRoot>    </g>
+  </g>
+</svg>
