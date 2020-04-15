@@ -5,18 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Converter decimal em binário e binário em decimal</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 
 <body>
-  <header>
-    <h1>Converter decimal<=>binário</h1>
-  </header>
-
+  <nav>
+    <a href="../"><i class="fas fa-angle-left back"></i></a>
+    <a href="."><i class="fas fa-sync-alt logo"></i></a>
+  </nav>
   <main>
     <section class="convert-area">
-      <p class="info-convert">Adicione valores em algum dos campos e clique em "Converter", o valor convertido será
-        mostrado no campo que ficou vazio.</p>
+      <header>
+        <h1 class="title">Conversor decimal <i class="fas fa-exchange-alt"></i> binário</h1>
+
+        <p class="info-convert">
+          Adicione valores em algum dos campos e clique em "Converter", o valor convertido será
+          mostrado no campo que ficou vazio.
+        </p>
+      </header>
+
       <form class="form-area">
         <input type="number" id="bin-input" class="input-value" placeholder="Número binário..." min="0" max="1">
         <!-- <button type="button" id="btn-invert" class="btn btn-invert">Inverter</button> -->
@@ -27,8 +35,6 @@
           <button type="button" id="btn-convert" class="btn btn-convert">Converter</button>
         </div>
       </form>
-
-      <!-- <div id="result" class="result">12</div> -->
     </section>
 
     <section class="explain-area">
@@ -41,7 +47,7 @@
     </section>
   </main>
 
-  <script src="./js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

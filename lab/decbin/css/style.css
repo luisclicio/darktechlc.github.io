@@ -34,16 +34,38 @@ body {
   background: var(--color-main);
 }
 
-header,
-main {
+nav,
+.convert-area,
+.explain-area {
   padding: 0 200px;
 }
 
-header {
+nav {
+  align-items: center;
   background: var(--color-main-nd);
   color: var(--color-main);
-  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
   width: 100%;
+  z-index: 2;
+}
+
+.back,
+.logo {
+  font-size: 1.5em;
+}
+
+.back {
+  color: var(--color-main);
+  padding: 15px 15px 15px 0;
+}
+
+.logo {
+  background: var(--color-main);
+  color: var(--color-main-nd);
+  padding: 15px;
 }
 
 .convert-area,
@@ -56,17 +78,23 @@ header {
   align-items: center;
   display: flex;
   justify-content: center;
-  height: calc(100vh - 70px);
+  height: 100vh;
+  min-height: 600px;
 }
 
-.form-area {
-  max-width: 700px;
-  width: 100%;
+.title {
+  font-size: 2em;
+  margin-bottom: 30px;
 }
 
 .info-convert {
   font-size: 1.5em;
   margin-bottom: 30px;
+}
+
+.form-area {
+  max-width: 700px;
+  width: 100%;
 }
 
 .input-value {
@@ -126,32 +154,48 @@ header {
   border-radius: 0 0 15px 0;
 }
 
+.explain-area {
+  background: var(--color-main-nd);
+  color: var(--color-main);
+}
+
+.content-explain {
+  padding-top: 50px;
+  height: 100vh;
+}
+
 @media (max-width: 800px) {
-  header,
-  main {
+  nav,
+  .convert-area,
+  .explain-area {
     padding: 0 50px;
   }
 }
 
 @media (max-width: 500px) {
-  header,
-  main {
+  nav,
+  .convert-area,
+  .explain-area {
     padding: 0 15px;
   }
 
+  .title {
+    font-size: 1.7em;
+  }
+
   .info-convert {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   .buttons {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .btn-reset {
-    border-radius: 0;
+    border-radius: 0 0 15px 15px;
   }
 
   .btn-convert {
-    border-radius: 0 0 15px 15px;
+    border-radius: 0;
   }
 }
