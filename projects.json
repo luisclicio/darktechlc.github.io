@@ -1,0 +1,16 @@
+{
+  "jobs": [
+    {
+      "title": "C&E Delivery",
+      "image_url": "img/cedelivery.webp",
+      "url": "https://cedelivery.now.sh"
+    }
+  ],
+  "lab": [
+    {
+      "title": "Simple ToDo List",
+      "image_url": "img/simpletodo.webp",
+      "url": "https://darktechlc.github.io/simpletodo"
+    }
+  ]
+}

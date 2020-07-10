@@ -1,0 +1,499 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+:root {
+  --color-one: #dee4e8;
+  --color-two: #08090a;
+  --color-two-alfa: #08090ae6;
+  --color-three: #4f7fa2;
+  --color-four: #46b09c;
+  --color-five: #ba0c3d;
+  --gradient: linear-gradient(45deg, #4f7fa2, #46b09c);
+  --gradient-alfa: linear-gradient(45deg, #4f7fa2a6, #46b09ca6);
+  --blur: blur(4px);
+  --polygon: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-two);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient);
+}
+
+::selection {
+  background: var(--color-one);
+  color: var(--color-two);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-two);
+}
+
+body > * {
+  padding: 0 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Nav Bar */
+.bar {
+  background: var(--color-two-alfa);
+  backdrop-filter: var(--blur);
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.logo img {
+  height: 32px;
+}
+
+.btn-menu {
+  background-color: transparent;
+  border: none;
+  height: 32px;
+  width: 40px;
+}
+
+.btn-menu span {
+  background: var(--color-one);
+  border-radius: 2px;
+  display: block;
+  height: 4px;
+  transition: background 500ms;
+  width: 40px;
+}
+
+.btn-menu.visible span {
+  background: var(--gradient);
+}
+
+.btn-menu span:nth-child(2) {
+  margin-left: 10px;
+  margin-top: 4px;
+  width: 30px;
+}
+
+/* Menu */
+nav {
+  align-items: center;
+  background: var(--color-two-alfa);
+  backdrop-filter: var(--blur);
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 68px);
+  justify-content: center;
+  left: -110vw;
+  position: fixed;
+  top: 68px;
+  transition-duration: 500ms;
+  transition-property: left;
+  width: 100%;
+  z-index: 2;
+}
+
+nav.visible {
+  left: 0;
+}
+
+.nav-link {
+  color: var(--color-one);
+  font-size: 2em;
+  padding: 16px;
+  position: relative;
+}
+
+.active::after,
+.nav-link::after {
+  background: var(--gradient);
+  border-radius: 2px;
+  content: "";
+  display: block;
+  position: absolute;
+  height: 4px;
+  transition: width 300ms;
+  width: 0;
+}
+
+.active::after {
+  width: calc(100% - 32px);
+}
+
+/* Header */
+header {
+  background-image: url(../img/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100vh;
+  justify-content: center;
+}
+
+.header-content,
+.header-social {
+  color: var(--color-one);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.header-content::before {
+  background: var(--gradient);
+  border-radius: 2px;
+  bottom: 4px;
+  content: "";
+  display: block;
+  position: absolute;
+  height: 108px;
+  width: 4px;
+}
+
+.header-content > * {
+  margin-left: 8px;
+}
+
+.header-content h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.header-content h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.header-social {
+  justify-content: center;
+  width: max-content;
+}
+
+.social-links {
+  color: var(--color-one);
+  font-size: 2em;
+  width: max-content;
+}
+
+.social-links + .social-links {
+  margin-top: 16px;
+}
+
+.social-links svg {
+  height: 1em;
+}
+
+.social-links svg path {
+  fill: var(--color-one);
+}
+
+/* Main */
+main {
+  background-color: var(--color-two);
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+section {
+  background-color: var(--color-two);
+  color: var(--color-one);
+  padding: 80px 0;
+  position: relative;
+}
+
+section::after {
+  background: var(--gradient);
+  border-radius: 2px;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 10%;
+  position: absolute;
+  height: 4px;
+  transition: width 300ms;
+  width: 80%;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+section h3 {
+  color: var(--color-one);
+  font-size: 1.8em;
+  font-weight: 600;
+  position: relative;
+  margin-left: 8px;
+  width: 100%;
+}
+
+section h3::before {
+  background: var(--gradient);
+  border-radius: 2px;
+  bottom: 4px;
+  content: "";
+  display: block;
+  height: 24px;
+  position: absolute;
+  transform: translateX(-8px);
+  width: 4px;
+}
+
+section h4 {
+  color: var(--color-one);
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+section hr {
+  background: var(--gradient);
+  border: none;
+  display: none;
+  height: 8px;
+  width: 100px;
+}
+
+section .grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr;
+  position: relative;
+  margin-top: 32px;
+}
+
+section .grid::before,
+section .grid::after {
+  /* background: var(--gradient); */
+  background: url(../img/hexagon.png);
+  background-size: 100% 100%;
+  /* border-radius: 8px; */
+  /* clip-path: var(--polygon); */
+  content: "";
+  display: block;
+  height: 32px;
+  position: absolute;
+  width: 30px;
+  z-index: 0;
+
+  display: none;
+}
+
+section .grid::before {
+  top: -48px;
+  right: 16px;
+}
+
+section .grid::after {
+  bottom: -48px;
+  left: 16px;
+}
+
+section .grid p {
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+
+section .grid a.card {
+  transition: transform 300ms;
+}
+
+section .grid a.card:active {
+  transform: scale(1.025);
+}
+
+section .grid .card figure {
+  height: 250px;
+  position: relative;
+  width: 100%;
+}
+
+section .grid .card figure img {
+  border-radius: 8px;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+section .grid .card figure figcaption {
+  background: var(--gradient-alfa);
+  /* backdrop-filter: var(--blur); */
+  border-radius: 8px;
+  height: 100%;
+  padding: 16px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+section .grid .card figure figcaption span {
+  color: var(--color-one);
+  font-size: 1.5em;
+  font-weight: 600;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+/* About */
+.sobre .grid::before {
+  top: 0;
+}
+
+.sobre img {
+  border-radius: 8px;
+  margin: 0 auto;
+  max-width: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Services */
+.servicos .grid .card {
+  background: var(--gradient);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.servicos .grid .card svg {
+  height: 2em;
+  margin-bottom: 16px;
+  width: 2em;
+}
+
+.servicos .grid .card:not():nth-child(2) svg path {
+  fill: var(--color-one);
+}
+
+.servicos .grid .card h5 {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* Portfolio */
+
+/* Lab */
+
+/* Contact */
+.contato .grid a {
+  background: var(--gradient);
+  border-radius: 8px;
+  color: var(--color-one);
+  display: flex;
+  flex-direction: column;
+  padding: 32px 16px;
+  transition: transform 300ms;
+}
+
+.contato .grid a:active {
+  transform: scale(1.025);
+}
+
+.contato .grid a svg {
+  height: 2em;
+  width: 2em;
+}
+
+.contato .grid a svg path {
+  fill: var(--color-one);
+}
+
+.contato .grid a span {
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+/* Footer */
+footer {
+  background: var(--color-two);
+  padding: 64px 16px;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+footer img {
+  height: 56px;
+  margin-bottom: 32px;
+}
+
+footer .links a {
+  margin-right: 8px;
+}
+
+footer .links a svg {
+  height: 1em;
+}
+
+footer .links a svg path {
+  fill: var(--color-one);
+}
+
+/* Button top */
+a.btn-to-top {
+  align-items: center;
+  border-radius: 8px;
+  bottom: -56px;
+  display: flex;
+  background: var(--gradient);
+  justify-content: center;
+  height: 48px;
+  position: fixed;
+  transition: bottom 300ms;
+  right: 16px;
+  width: 48px;
+  z-index: 1;
+}
+
+a.btn-to-top svg {
+  height: 1.5em;
+}
+
+a.btn-to-top svg path {
+  fill: var(--color-one);
+}
+
+a.btn-to-top.visible {
+  bottom: 16px;
+}

@@ -1,0 +1,55 @@
+@media (min-width: 350px) {
+  .header-content::before {
+    height: 72px;
+  }
+
+  .contato .grid a span {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-link:hover::after {
+    width: calc(100% - 32px);
+  }
+
+  header {
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .header-content {
+    flex-grow: 5;
+  }
+
+  section .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contato .grid a:hover,
+  section .grid a.card:hover {
+    transform: scale(1.025);
+  }
+}
+
+@media (max-height: 400px) {
+  .nav-link {
+    font-size: 1.8em;
+    padding: 8px;
+  }
+
+  .active::after {
+    width: calc(100% - 16px);
+  }
+
+  .sobre .grid img {
+    max-height: 300px;
+    width: auto;
+  }
+
+  main,
+  footer {
+    margin: 0 auto;
+    max-width: 550px;
+  }
+}
