@@ -10,7 +10,10 @@ const getProjects = async url => {
     return projects;
   } catch (error) {
     console.error(error);
-    return;
+    return {
+      jobs: [],
+      lab: []
+    };
   }
 }
 
@@ -64,7 +67,4 @@ const populateCards = async () => {
   lab.forEach(labItem => labGrid.appendChild(CardComponent(labItem)));
 }
 
-console.time()
 populateCards();
-console.timeEnd()
-

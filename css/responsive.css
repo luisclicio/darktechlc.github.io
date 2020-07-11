@@ -13,14 +13,14 @@
     width: calc(100% - 32px);
   }
 
-  header {
+  /* header {
     align-items: center;
     flex-direction: row-reverse;
   }
 
   .header-content {
     flex-grow: 5;
-  }
+  } */
 
   section .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -51,5 +51,11 @@
   footer {
     margin: 0 auto;
     max-width: 550px;
+  }
+}
+
+@media (max-height: 700px) {
+  section {
+    padding: 100px 0;
   }
 }

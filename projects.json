@@ -8,9 +8,24 @@
   ],
   "lab": [
     {
-      "title": "Simple ToDo List",
+      "title": "Simple To Do List",
       "image_url": "img/simpletodo.webp",
       "url": "https://darktechlc.github.io/simpletodo"
+    },
+    {
+      "title": "Save Your Links",
+      "image_url": "img/saveyourlinks.webp",
+      "url": "https://github.com/darktechlc"
+    },
+    {
+      "title": "Random Pallete",
+      "image_url": "img/randompallete.webp",
+      "url": "https://darktechlc.github.io/randompallete"
+    },
+    {
+      "title": "DecBin",
+      "image_url": "img/decbin.webp",
+      "url": "https://darktechlc.github.io/decbin"
     }
   ]
 }

@@ -1,3 +1,4 @@
+const navBar = document.querySelector('div.bar');
 const btnMenu = document.querySelector('#btn-menu');
 const menu = document.querySelector('#menu');
 const navLinks = document.querySelectorAll('.nav-link');
@@ -6,8 +7,8 @@ const btnToTop = document.querySelector('#btn-to-top');
 
 const handleMenu = element => {
   element.addEventListener('click', () => {
-    menu.classList.toggle('visible');
     btnMenu.classList.toggle('visible');
+    menu.classList.toggle('visible');
   });
 }
 
@@ -28,7 +29,11 @@ handleMenu(btnMenu);
 window.addEventListener('scroll', () => {
   const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
-  // Button to top
+  // Actions in navbar
+  if (scrollPosition > 20) navBar.classList.add('visible');
+  else navBar.classList.remove('visible');
+
+  // Actions in button to top
   if (scrollPosition > 140) btnToTop.classList.add('visible');
   else {
     btnToTop.classList.remove('visible');
